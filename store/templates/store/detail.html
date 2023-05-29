@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h1>{{ product.name }}</h1>
+<h2>${{ product.price }}</h2>
+<h4>{{ product.description }} {% lorem 2 p random %}</h4>
+<img src="{{ product.thumbnail.url }}" alt="{{ product.name }}" style="max-width:250px;">
+<p>Quantite en stock : ({{ product.stock }})</p>
+
+{% if user.is_authenticated %}
+<p>
+    <a href="{% url 'add-to-cart' product.slug %}">Ajouter dans le panier</a>
+</p>
+{% endif %}
+
+{% endblock %}

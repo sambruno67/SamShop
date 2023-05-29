@@ -1,0 +1,108 @@
+
+
+ 
+
+@font-face {
+    font-family: "comforta";
+    src: url(../../assets/fonts/Comfortaa-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: "modern age";
+    src: url(../../assets/fonts/Modern\ Age\ Italic.ttf);
+}
+
+body{
+    color: ;
+    background: url();
+}
+
+.titre{
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-align: center;
+    /*Les tailles de polices doivent etre en REM
+        1rem ==> 16px
+
+    */
+    font-family: "modern age";
+    font-size: 1.5rem;
+    text-shadow: ;
+    color: darkblue;
+    background:url();
+
+}
+
+
+.navigation-bar{
+    display: inline-flex;
+    margin-right: ;
+    padding: ;
+    border: ;
+    width: 100%;
+    height: 10%;
+    border-radius: 2px;
+    background: url(../../../media/images/antelope-canyon-g6a5176b18_640.jpg) center/cover;
+}
+.a {
+    
+    padding-left: 1%;
+    margin: auto 0;
+}
+.nav{
+    padding: 10px;
+    margin-left: 5px;
+    background: ;
+    box-shadow:grey 0.5px 0.5px 1px ;
+    color: rgb(255, 255, 255);
+    
+}
+.nav:hover{
+    box-shadow:darkblue 0px 2px 2px ;
+    font-family: "comforta";
+    width: 200%;
+    color: blue;
+    background: rgba(255, 255, 255, 0.24);
+
+}
+
+.imgProduit {
+    border-radius: 0 10px 0 10px;
+    width: 250px;
+    height: 250px;
+}
+
+.mesProduits {
+    display: inline-block;
+    overflow: hidden;
+    
+}
+.produitUnitaire {
+    border: 1px solid blue;
+    margin:10px 10px;
+    padding: 10px auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.produitUnitaire img{
+    margin: 10%;
+}
+
+.row {
+    display: flex;
+}
+.d-flex {
+    display: flex;
+    background: darkblue;
+    text-align: ;
+
+}
+.text-muted{
+    text-align: bottom;
+}
+
+
+.nav-item:nth-child(1) a, .nav-item:nth-child(2) a {
+    text-align: left;
+}

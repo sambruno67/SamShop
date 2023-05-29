@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+{% for product in products %}
+<div class="mesProduits">
+    <div class="produitUnitaire">
+        <h2>{{ product.name }}</h2>
+        <img class="imgProduit" src="{{ product.thumbnail.url }}" alt="{{ product.name }}" >
+        <a href="{{ product.get_absolute_url }}">Voir l'article</a>
+</div>
+</div>
+
+
+{% endfor %}
+<ul class="pagination">
+    {% if products.has_previous %}
+    <li class="page-item">
+        <a class="page-link" href="?page={{ products.previous_page_number }}">Precedent</a>
+
+    </li>
+    {% endif %}
+
+    <li class="page-item active">
+        <a class="page-link" href="?page={{ products.number}}">{{ products.number}}</a>
+    </li>
+
+
+    {% if products.has_next %}
+    <li class="page-item">
+        <a class="page-link" href="?page={{ products.next_page_number }}">Suivant</a>
+
+    </li>
+    {% endif %}
+
+</ul>
+
+
+{% endblock %}
